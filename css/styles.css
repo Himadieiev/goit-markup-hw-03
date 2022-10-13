@@ -1,0 +1,240 @@
+/* Основной шрифт и цвет текста, общие секционные стили */
+:root {
+  --main-text-color: #212121;
+  --header-background-color: #FFFFFF;
+  --first-background-color: #2F303A;
+  --second-background-color: #F5F4FA;
+  /* --third-background-color: #F5F5F5; */
+  --hoverfocus-text-color: #2196F3;
+  --text-color: #FFFFFF;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+
+  color: var(--main-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.title-section {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.list-item {
+  text-align: center;
+}
+
+.text {
+  font-weight: 400;
+  color: #757575;
+}
+
+/* Оформление шапки сайта - общая для всех! */
+.header {
+  background: var(--header-background-color);
+}
+
+.logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+  text-decoration: none;
+}
+
+.logo-web {
+  color: #2196F3;
+}
+
+.link-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+  text-decoration: none;
+}
+
+.link-nav:hover,
+.link-nav:focus {
+  color: var(--hoverfocus-text-color);
+}
+
+.link-contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+  text-decoration: none;
+}
+
+.link-contacts:hover,
+.link-contacts:focus {
+  color: var(--hoverfocus-text-color);
+}
+
+/*Заказ услуг - главный заголовок*/
+.section-one {
+  background: var(--first-background-color);
+}
+
+.main-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+.main-button {
+  background: #2196F3;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.main-button:hover,
+.main-button:focus {
+  background: #188CE8;
+}
+
+/*Особенности студии*/
+.subtitle-two {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.text-two {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/*Чем мы занимаемся - пока здесь ничего нет!*/
+
+/* Наша команда */
+.section-four {
+  background: var(--second-background-color);
+}
+
+.subtitle-four {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+.text-four {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+/* Футер - общий для всех! */
+.footer {
+  background: var(--first-background-color);
+}
+
+.logo-footer {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19; 
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.mail {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.tel {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.address:hover,
+.address:focus,
+.mail:hover,
+.mail:focus,
+.tel:hover,
+.tel:focus {
+  color: var(--hoverfocus-text-color);
+}
+
+/* Страница 2 - Портфолио */
+.button {
+  background: #F5F4FA;
+  color: #212121;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background: var(--hoverfocus-text-color);
+  color: #FFFFFF;
+}
+
+.link-potrfolio {
+  color: #212121;
+  text-decoration: none;
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+}
+
+.text.portfolio {
+  font-size: 16px;
+  line-height: 1.88;
+}
