@@ -32,8 +32,19 @@ body {
   margin-right: auto;
 }
 
+.section {
+  margin-top: 94px;
+}
+
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, p, {
+  margin: 0;
+  padding: 0;
 }
 
 .title-section {
@@ -55,6 +66,10 @@ body {
 /* Оформление шапки сайта - общая для всех! */
 .header {
   background: var(--header-background-color);
+}
+
+header {
+  border-bottom: 1px solid #ECECEC;
 }
 
 .nav {
@@ -134,6 +149,12 @@ body {
 .section-one {
   background: var(--first-background-color);
   text-align: center;
+  /* width: 1600px;
+  height: 600px; */
+}
+
+main > .section-one {
+  margin-top: 0;
 }
 
 .main-title {
@@ -143,6 +164,8 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text-color);
+  margin-bottom: 30px;
+  margin-top: 0;
 }
 
 .main-button {
@@ -155,6 +178,14 @@ body {
   letter-spacing: 0.06em;
   font-family: inherit;
   cursor: pointer;
+
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 10px 32px;
+  display: inline-block;
+  min-width: 216px;
+  height: 50px;
 }
 
 .main-button:hover,
@@ -163,11 +194,25 @@ body {
 }
 
 /*Особенности студии*/
+.feature {
+  display: flex;
+}
+
+.feature>.item {
+  width: 270px;
+  height: 98px;
+}
+
+.feature>.item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .subtitle-two {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .text-two {
@@ -175,9 +220,42 @@ body {
   line-height: 1.71;
 }
 
-/*Чем мы занимаемся - пока здесь ничего нет!*/
+/*Чем мы занимаемся*/
+.work {
+  display: flex;
+  margin-top: 50px;
+}
+
+.work>.item:not(:last-child) {
+  margin-right: 30px;
+}
 
 /* Наша команда */
+.team {
+  display: flex;
+  margin-top: 50px;
+}
+
+.team>.item:not(:last-child) {
+  margin-right: 30px;
+  
+}
+
+.team > .item {
+  margin-bottom: 94px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+} 
+
+.team-photo {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.section-four > .container > .title-section {
+  padding-top: 94px;
+}
+
 .section-four {
   background: var(--second-background-color);
 }
@@ -196,6 +274,14 @@ body {
 }
 
 /* Футер - общий для всех! */
+.list-address {
+  margin-top: 20px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 231px;
+}
+
 .footer {
   background: var(--first-background-color);
 }
@@ -208,6 +294,8 @@ body {
   letter-spacing: 0.03em;
   color: #FFFFFF;
   text-decoration: none;
+  display: block;
+  padding-top: 60px;
 }
 
 .address {
@@ -228,7 +316,7 @@ body {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-}
+  }
 
 .tel {
   font-style: normal;
@@ -250,6 +338,27 @@ body {
 }
 
 /* Страница 2 - Портфолио */
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+
+.filter>.item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+  margin-bottom: 94px;
+}
+
+.portfolio-list > .item {
+  margin: 15px;
+}
+
 .button {
   background: #F5F4FA;
   color: #212121;
@@ -260,6 +369,10 @@ body {
   letter-spacing: 0.03em;
   font-family: inherit;
   cursor: pointer;
+  border-radius: 4px;
+  border: 0;
+  display: inline-block;
+  padding: 6px 22px;
 }
 
 .button:hover,
@@ -268,9 +381,17 @@ body {
   color: #FFFFFF;
 }
 
+.project-name {
+  padding: 20px 24px;
+  border-left: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+}
+
 .link-potrfolio {
   color: #212121;
   text-decoration: none;
+  /* display: block; */
 }
 
 .subtitle {
