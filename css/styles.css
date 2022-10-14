@@ -9,11 +9,27 @@
   --text-color: #FFFFFF;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
 
   color: var(--main-text-color);
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .list {
@@ -27,9 +43,9 @@ body {
   text-align: center;
 }
 
-.list-item {
+/* .item {
   text-align: center;
-}
+} */
 
 .text {
   font-weight: 400;
@@ -39,6 +55,33 @@ body {
 /* Оформление шапки сайта - общая для всех! */
 .header {
   background: var(--header-background-color);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  width: 281px;
+  justify-content: space-between;
+  margin-left: 93px;
+  padding-left: 0;
+}
+
+.contacts {
+  display: flex;
+  width: 304px;
+  justify-content: space-between;
+  margin-left: auto;
+  padding-left: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 80px;
 }
 
 .logo {
@@ -62,6 +105,8 @@ body {
   letter-spacing: 0.02em;
   color: var(--main-text-color);
   text-decoration: none;
+
+  display: block;
 }
 
 .link-nav:hover,
@@ -76,6 +121,8 @@ body {
   letter-spacing: 0.02em;
   color: #757575;
   text-decoration: none;
+
+  display: block;
 }
 
 .link-contacts:hover,
@@ -86,13 +133,13 @@ body {
 /*Заказ услуг - главный заголовок*/
 .section-one {
   background: var(--first-background-color);
+  text-align: center;
 }
 
 .main-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text-color);
