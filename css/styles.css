@@ -33,11 +33,12 @@ body {
 }
 
 .section {
-  margin-top: 94px;
+  padding-top: 94px;
 }
 
 .list {
   list-style: none;
+
   margin: 0;
   padding: 0;
 }
@@ -47,16 +48,20 @@ h1, h2, h3, p, {
   padding: 0;
 }
 
+li > h3, li > p {
+  margin: 0;
+}
+
+div > h2, div > h3, div > p {
+  margin: 0;
+}
+
 .title-section {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
 }
-
-/* .item {
-  text-align: center;
-} */
 
 .text {
   font-weight: 400;
@@ -96,7 +101,6 @@ header {
 .header {
   display: flex;
   align-items: center;
-  height: 80px;
 }
 
 .logo {
@@ -122,6 +126,8 @@ header {
   text-decoration: none;
 
   display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .link-nav:hover,
@@ -145,12 +151,17 @@ header {
   color: var(--hoverfocus-text-color);
 }
 
+.current {
+  color: #2196F3;
+}
+
 /*Заказ услуг - главный заголовок*/
 .section-one {
   background: var(--first-background-color);
   text-align: center;
-  /* width: 1600px;
-  height: 600px; */
+
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 main > .section-one {
@@ -164,8 +175,12 @@ main > .section-one {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text-color);
+
+  width: 696px;
   margin-bottom: 30px;
   margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .main-button {
@@ -184,8 +199,6 @@ main > .section-one {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   padding: 10px 32px;
   display: inline-block;
-  min-width: 216px;
-  height: 50px;
 }
 
 .main-button:hover,
@@ -212,6 +225,7 @@ main > .section-one {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+
   margin-bottom: 10px;
 }
 
@@ -230,6 +244,10 @@ main > .section-one {
   margin-right: 30px;
 }
 
+.section-three {
+  padding-bottom: 94px;
+}
+
 /* Наша команда */
 .team {
   display: flex;
@@ -242,22 +260,18 @@ main > .section-one {
 }
 
 .team > .item {
-  margin-bottom: 94px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 } 
 
 .team-photo {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.section-four > .container > .title-section {
-  padding-top: 94px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .section-four {
   background: var(--second-background-color);
+  padding-bottom: 94px;
 }
 
 .subtitle-four {
@@ -265,6 +279,8 @@ main > .section-one {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+
+  margin-bottom: 10px;
 }
 
 .text-four {
@@ -274,16 +290,11 @@ main > .section-one {
 }
 
 /* Футер - общий для всех! */
-.list-address {
-  margin-top: 20px;
-  padding-bottom: 60px;
-  display: flex;
-  flex-wrap: wrap;
-  width: 231px;
-}
-
 .footer {
   background: var(--first-background-color);
+
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo-footer {
@@ -294,8 +305,12 @@ main > .section-one {
   letter-spacing: 0.03em;
   color: #FFFFFF;
   text-decoration: none;
+
   display: block;
-  padding-top: 60px;
+}
+
+address {
+  margin-top: 20px;
 }
 
 .address {
@@ -306,6 +321,11 @@ main > .section-one {
   letter-spacing: 0.03em;
   color: #FFFFFF;
   text-decoration: none;
+}
+
+.item-mail {
+  margin-top: 9px;
+  margin-bottom: 9px;
 }
 
 .mail {
@@ -338,6 +358,10 @@ main > .section-one {
 }
 
 /* Страница 2 - Портфолио */
+.section-portfolio {
+  padding-bottom: 94px;
+}
+
 .filter {
   display: flex;
   justify-content: center;
@@ -351,12 +375,7 @@ main > .section-one {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
-  margin-bottom: 94px;
-}
-
-.portfolio-list > .item {
-  margin: 15px;
+  gap: 30px;
 }
 
 .button {
@@ -369,6 +388,7 @@ main > .section-one {
   letter-spacing: 0.03em;
   font-family: inherit;
   cursor: pointer;
+
   border-radius: 4px;
   border: 0;
   display: inline-block;
@@ -391,7 +411,6 @@ main > .section-one {
 .link-potrfolio {
   color: #212121;
   text-decoration: none;
-  /* display: block; */
 }
 
 .subtitle {
@@ -400,6 +419,8 @@ main > .section-one {
   line-height: 2;
   letter-spacing: 0.06em;
   text-decoration: none;
+  
+  margin-bottom: 4px;
 }
 
 .text.portfolio {
