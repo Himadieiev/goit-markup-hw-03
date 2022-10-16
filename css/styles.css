@@ -56,6 +56,10 @@ div > h2, div > h3, div > p {
   margin: 0;
 }
 
+img {
+  display: block;
+}
+
 .title-section {
   font-weight: 700;
   font-size: 36px;
